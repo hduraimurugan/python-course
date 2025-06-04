@@ -51,4 +51,4 @@ while True:
         break
     items.append(item)
 
-print("Items in cart: ", items)
+print("Items in cart view: ", items)

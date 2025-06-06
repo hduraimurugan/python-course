@@ -1,0 +1,3 @@
+{'id': 1, 'name': 'John', 'department': 'IT'}
+{'id': 2, 'name': 'Alice', 'department': 'HR'}
+{'id': 3, 'name': 'Bob', 'department': 'Finance'}

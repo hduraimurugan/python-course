@@ -4,11 +4,20 @@ from datetime import datetime
 import os
 
 def fetch_data_from_mysql():
-    mysql_config= {
-        'host' : "localhost",
-        "user" : "root",
-        "password" : "Durai@1234",
-        "database" : "etl_example"
+    # mysql_config= {
+    #     'host' : "localhost",
+    #     "user" : "root",
+    #     "password" : "Durai@1234",
+    #     "database" : "etl_example"
+    # }
+
+    # ubuntu's mysql
+    mysql_config = {
+        'host': 'localhost',
+        'user': 'durai',
+        'password': 'Durai@123',
+        'database': 'etl_example',
+        'port': 3306
     }
 
     connection=pymysql.connect(**mysql_config)
@@ -22,7 +31,7 @@ def transform_data(df):
     return df_transformed
 
 def write_data_to_file(df):
-    output_dir ='/home/ubuntu/extract'
+    output_dir ='/home/duraimuruganh/extract'
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     file_name = f'etl_output_{timestamp}.csv'

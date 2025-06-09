@@ -1,0 +1,11 @@
+2025-06-09 19:01:15,979 - INFO - Trying to divide 10 by 2
+2025-06-09 19:01:15,979 - DEBUG - Division successful: 10 / 2 = 5.0
+2025-06-09 19:01:15,979 - INFO - Trying to divide 10 by 0
+2025-06-09 19:01:15,979 - ERROR - Attempted to divide by zero!
+2025-06-09 19:01:15,980 - INFO - Trying to divide 10 by 2
+2025-06-09 19:01:15,980 - ERROR - Unexpected error occurred
+Traceback (most recent call last):
+  File "D:\Code-Projects\Python\python-12hr-course\logging\logging_ex.py", line 14, in divide
+    result = a / b
+             ~~^~~
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
